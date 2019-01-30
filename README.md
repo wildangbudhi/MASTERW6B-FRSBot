@@ -1,7 +1,7 @@
 # MASTERW6B-FRSBot V2.0
 ## NEW UPDATES: Bisa digunakan banyak user dalam satu kali running program
 ### !!! Lakukan Download atau Clone semua data pada Repo ini terlebih dahulu !!!
-### !!! Lakukan Semua langkah - lankah di dalam terminal dan directory yang terdapat semua file dari Repo ini !!!
+### !!! Lakukan Semua langkah - langkah di dalam terminal dan directory yang terdapat semua file dari Repo ini !!!
 
 <br />
 
