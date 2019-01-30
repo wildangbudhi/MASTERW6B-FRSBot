@@ -1,0 +1,57 @@
+{
+    "Susilo":
+    [
+        {
+            "nama": "Sistem Operasi",
+            "kelas": "D"
+        },
+        {
+            "nama": "Probabilitas dan Statistik",
+            "kelas": "C"
+        },
+        {
+            "nama": "Manajemen Basis Data",
+            "kelas": "F"
+        },
+        {
+            "nama": "Kecerdasan Buatan",
+            "kelas": "A"
+        },
+        {
+            "nama": "Analisis dan Perancangan Sistem Informasi",
+            "kelas": "B"
+        },
+        {
+            "nama": "Perancangan dan Analisis Algoritma",
+            "kelas": "B"
+        }
+    ],
+    
+    "Joko Purwanto":
+    [
+        {
+            "nama": "Sistem Operasi",
+            "kelas": "D"
+        },
+        {
+            "nama": "Probabilitas dan Statistik",
+            "kelas": "C"
+        },
+        {
+            "nama": "Manajemen Basis Data",
+            "kelas": "F"
+        },
+        {
+            "nama": "Kecerdasan Buatan",
+            "kelas": "A"
+        },
+        {
+            "nama": "Analisis dan Perancangan Sistem Informasi",
+            "kelas": "B"
+        },
+        {
+            "nama": "Perancangan dan Analisis Algoritma",
+            "kelas": "B"
+        }
+    ]
+}
