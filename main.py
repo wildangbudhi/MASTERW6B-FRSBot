@@ -1,4 +1,4 @@
-from FRSBot import FRSBot, json, Process
+from FRSBot import FRSBot, load, Process
 
 def main():
     print("----------Welcom to MASTERW6B-FRSBot---------")
@@ -9,7 +9,7 @@ def main():
 
     program = []
     programProcess = []
-    for i in json.load(open('user.json')): program.append(FRSBot(i, ErroPrev=err))
+    for i in load(open('user.json')): program.append(FRSBot(i, ErroPrev=err))
     for i in program: programProcess.append(Process(target=i.run))
     for i in programProcess: i.start()
     for i in programProcess: i.join()
