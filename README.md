@@ -3,7 +3,7 @@
 - Bisa digunakan banyak user dalam satu kali running program
 - Menggunakan Multhithreading untuk melakukan pemilihan semua Matkul secara Parallel
 - Menggunakan Multhiprocessing untuk menjalankan FRSBot untuk semua User secara Parallel
-### !!! Lakukan Semua langkah - langkah di dalam terminal dan directory yang terdapat semua file dari Repo ini !!!
+### !!! Lakukan Semua langkah pada terminal dan directory yang terdapat semua file dari Repo ini !!!
 
 <br />
 
