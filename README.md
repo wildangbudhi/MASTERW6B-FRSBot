@@ -46,7 +46,7 @@ npm i jsencrypt
 ```
 **6. Edit file 'user.json' :**
 - contoh format untuk satu user :
-```
+```json
 {
     "Nama mu dongs":
     {
@@ -56,7 +56,7 @@ npm i jsencrypt
 }
 ```
 - contoh format untuk banyak user (dicontohkan 3 user) :
-```
+```json
 {
     "Susilo":
     {
@@ -80,7 +80,7 @@ npm i jsencrypt
 
 **7. Edit file 'matkul.json' :**
 - contoh format 1 user 6 matkul :
-```
+```json
 {
     "Susilo":
     [
@@ -112,7 +112,7 @@ npm i jsencrypt
 }
 ```
 - contoh format 2 user 5 matkul :
-```
+```json
 {
     "Susilo":
     [
