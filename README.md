@@ -8,17 +8,22 @@
 
 <br />
 
-**1. Download Python3 :**
+**1. Clone Repo :**
+```
+git clone https://github.com/wildangbudhi/MASTERW6B-FRSBot.git
+```
+
+**2. Download Python3 :**
 ```
 https://www.python.org/downloads/
 ```
 
-**2. Download Node.JS :**
+**3. Download Node.JS :**
 ```
 https://nodejs.org/en/download/
 ```
 
-**3. Update pip for Python :**
+**4. Update pip for Python :**
 ```
 pip install --upgrade pip
 ```
@@ -35,16 +40,16 @@ python3 -m pip install --upgrade pip
 py -m pip install --upgrade pip
 ```
 
-**4. Install Python Module :**
+**5. Install Python Module :**
 ```
 pip install -r requirementspip.txt
 ```
 
-**5. Install Node.JS Module :**
+**6. Install Node.JS Module :**
 ```
 npm i jsencrypt
 ```
-**6. Edit file 'user.json' :**
+**7. Edit file 'user.json' :**
 - contoh format untuk satu user :
 ```json
 {
@@ -78,7 +83,7 @@ npm i jsencrypt
 }
 ```
 
-**7. Edit file 'matkul.json' :**
+**8. Edit file 'matkul.json' :**
 - contoh format 1 user 6 matkul :
 ```json
 {
@@ -173,7 +178,7 @@ npm i jsencrypt
 ```
 - Jumlah Matkul tiap User tidak harus sama, bisa berbeda. Namun jumlah user di file 'matkul.json' harus sama dengan jumlah user di file 'user.json'
 
-**8. Run Program :**
+**9. Run Program :**
 ```
 python main.py
 ```
