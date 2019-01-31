@@ -1,9 +1,9 @@
-import requests
-import subprocess as sp
+from requests import session
+from subprocess import check_output
 from lxml import html
 from threading import Thread
 from multiprocessing import Process
-import json
+from json import load
 from time import sleep
 
 class FRSBot:
@@ -13,9 +13,9 @@ class FRSBot:
         self.__ErroPrev = ErroPrev
         self.name = name
         self.__headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-        self.__matkul = json.load(open('matkul.json'))[self.name]
-        self.__user = json.load(open('user.json'))[self.name]
-        self.__session = requests.session()
+        self.__matkul = load(open('matkul.json'))[self.name]
+        self.__user = load(open('user.json'))[self.name]
+        self.__session = session()
         self.__get('https://integra.its.ac.id/')
     
     def __post(self, url, dataDict):
@@ -54,7 +54,7 @@ class FRSBot:
                 return []
 
     def __procLogin(self, publicKey):
-        a = str(sp.check_output(["node","login.js", self.__user['nrp'],  self.__user['password'], publicKey]))
+        a = str(check_output(["node","login.js", self.__user['nrp'],  self.__user['password'], publicKey]))
         return a[2:-3]
 
     def __login(self):
