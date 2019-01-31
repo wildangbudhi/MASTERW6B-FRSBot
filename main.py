@@ -1,4 +1,4 @@
-from FRSBot import FRSBot, json, Thread
+from FRSBot import FRSBot, json, Process
 
 def main():
     print("----------Welcom to MASTERW6B-FRSBot---------")
@@ -8,11 +8,11 @@ def main():
     elif(sel == 'n' or sel == 'N'): err = False
 
     program = []
-    programThread = []
+    programProcess = []
     for i in json.load(open('user.json')): program.append(FRSBot(i, ErroPrev=err))
-    for i in program: programThread.append(Thread(target=i.run, daemon=True))
-    for i in programThread: i.start()
-    for i in programThread: i.join()
+    for i in program: programProcess.append(Process(target=i.run))
+    for i in programProcess: i.start()
+    for i in programProcess: i.join()
 
 if __name__ == "__main__":
     main()
