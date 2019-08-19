@@ -46,7 +46,7 @@ pip install -r requirementspip.txt
 
 **6. Install Node.JS Module :**
 ```
-npm i jsencrypt
+npm i node-jsencrypt
 ```
 **7. Edit file 'user.json' :**
 - contoh format untuk satu user :
