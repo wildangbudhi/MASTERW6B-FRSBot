@@ -68,8 +68,11 @@ class FRSBot:
         self.__get('https://integra.its.ac.id/dashboard.php?sim=AKAD__10__')
         self.__get(self.__page.text[self.__page.text.find('URL=')+4:-2])
         self.__get('https://akademik.its.ac.id/sys_login.php')
+        self.__get('https://akademik.its.ac.id/list_frs.php')
 
     def __pilihMatkul(self, namaMatkul, kelas):
+
+        print("Pilih " + namaMatkul)
         datas = self.__xpath('//option[contains(text(),"' + namaMatkul +'")]')
         value = ''
         for data in datas:
@@ -78,7 +81,7 @@ class FRSBot:
                 break
         if(value != ''):
             oldNRP = self.__xpath('//input[@id="nrp"]')[0].attrib['value']
-            self.__post('https://akademik.its.ac.id/list_frs.php', dict(semesterTerm='2', thnAjaran='2018', kelasjur=value, kelastpb='UG4905|—|2018|__TPB|0', nrp=oldNRP, act='ambil', key=value))
+            self.__post('https://akademik.its.ac.id/list_frs.php', dict(semesterTerm='1', thnAjaran='2019', kelasjur=value, kelastpb='UG4905|—|2018|__TPB|0', nrp=oldNRP, act='ambil', key=value))
             print(self.name + " Memilih : " + value + " - " + namaMatkul)
         else:
             print(self.name + " : Error Memilih Matkul")
@@ -102,6 +105,7 @@ class FRSBot:
         print("MASTERW6B is Starting FRS BOT for " + self.name + " !")
         print(self.name + " LOGIN !")
         self.__login()
+
 
         while(not self.__isAllMatkulSelected()):
             threadMatkul = []

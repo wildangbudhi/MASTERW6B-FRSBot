@@ -1,57 +1,25 @@
 {
-    "Susilo":
+    "Wildan":
     [
         {
-            "nama": "Sistem Operasi",
+            "nama": "Perancangan Perangkat Lunak",
             "kelas": "D"
         },
         {
-            "nama": "Probabilitas dan Statistik",
+            "nama": "Grafika Komputer",
+            "kelas": "B"
+        },
+        {
+            "nama": "Kecerdasan Komputasional",
+            "kelas": "E"
+        },
+        {
+            "nama": "Manajemen Proyek Perangkat Lunak",
+            "kelas": "B"
+        },
+        {
+            "nama": "Keamanan Informasi dan Jaringan",
             "kelas": "C"
-        },
-        {
-            "nama": "Manajemen Basis Data",
-            "kelas": "F"
-        },
-        {
-            "nama": "Kecerdasan Buatan",
-            "kelas": "A"
-        },
-        {
-            "nama": "Analisis dan Perancangan Sistem Informasi",
-            "kelas": "B"
-        },
-        {
-            "nama": "Perancangan dan Analisis Algoritma",
-            "kelas": "B"
-        }
-    ],
-    
-    "Joko Purwanto":
-    [
-        {
-            "nama": "Sistem Operasi",
-            "kelas": "D"
-        },
-        {
-            "nama": "Probabilitas dan Statistik",
-            "kelas": "C"
-        },
-        {
-            "nama": "Manajemen Basis Data",
-            "kelas": "F"
-        },
-        {
-            "nama": "Kecerdasan Buatan",
-            "kelas": "A"
-        },
-        {
-            "nama": "Analisis dan Perancangan Sistem Informasi",
-            "kelas": "B"
-        },
-        {
-            "nama": "Perancangan dan Analisis Algoritma",
-            "kelas": "B"
         }
     ]
 }
