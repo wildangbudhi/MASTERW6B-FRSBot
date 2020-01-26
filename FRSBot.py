@@ -76,9 +76,11 @@ class FRSBot:
         datas = self.__xpath('//option[contains(text(),"' + namaMatkul +'")]')
         value = ''
         for data in datas:
-            if(data.attrib['value'].find('|' + kelas + '|') != -1):
+
+            if(kelas == '' or data.attrib['value'].find('|' + kelas + '|') != -1):
                 value = data.attrib['value']
                 break
+            
         if(value != ''):
             oldNRP = self.__xpath('//input[@id="nrp"]')[0].attrib['value']
             self.__post('https://akademik.its.ac.id/list_frs.php', dict(semesterTerm='1', thnAjaran='2019', kelasjur=value, kelastpb='UG4905|—|2018|__TPB|0', nrp=oldNRP, act='ambil', key=value))
@@ -88,8 +90,13 @@ class FRSBot:
 
     def __isAllMatkulSelected(self):
         self.__get('https://akademik.its.ac.id/list_frs.php')
-        while(self.__matkul):
-            if(self.__xpath('//td[contains(text(),"' + self.__matkul[0]['nama'] + '")]') != []): self.__matkul.pop(0)
+
+        temp = []
+
+        for matkul in self.__matkul:
+            if(self.__xpath('//td[contains(text(),"' + matkul['nama'] + '")]') == []): temp.append(matkul)
+        
+        self.__matkul = temp
         
         if(not self.__matkul): return True
         else: return False
@@ -105,9 +112,10 @@ class FRSBot:
         print("MASTERW6B is Starting FRS BOT for " + self.name + " !")
         print(self.name + " LOGIN !")
         self.__login()
-
+        print("Login done")
 
         while(not self.__isAllMatkulSelected()):
+            print("Loop Pilih")
             threadMatkul = []
             for data in self.__matkul:
                 threadMatkul.append(Thread(target=self.__pilihMatkul,args=(data['nama'], data['kelas'],), daemon=True))

@@ -2,23 +2,23 @@
     "Wildan":
     [
         {
-            "nama": "Perancangan Perangkat Lunak",
-            "kelas": "D"
-        },
-        {
-            "nama": "Grafika Komputer",
+            "nama": "Rekayasa Kebutuhan",
             "kelas": "B"
         },
         {
-            "nama": "Kecerdasan Komputasional",
-            "kelas": "E"
+            "nama": "Pengolahan Citra Digital",
+            "kelas": ""
         },
         {
-            "nama": "Manajemen Proyek Perangkat Lunak",
-            "kelas": "B"
+            "nama": "Deep Learning",
+            "kelas": ""
         },
         {
-            "nama": "Keamanan Informasi dan Jaringan",
+            "nama": "Pemrograman Jaringan",
+            "kelas": "F"
+        },
+        {
+            "nama": "Pemrograman berbasis Kerangka Kerja",
             "kelas": "C"
         }
     ]
