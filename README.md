@@ -1,4 +1,4 @@
-# MASTERW6B-FRSBot V2.0
+# MASTERW6B-FRSBot V3.0
 ## NEW UPDATES: 
 - Bisa digunakan banyak user dalam satu kali running program
 - Menggunakan Multhithreading untuk melakukan pemilihan semua Matkul secara Parallel
