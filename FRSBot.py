@@ -2,9 +2,10 @@ from requests import session
 from subprocess import check_output
 from lxml import html
 from threading import Thread
-from multiprocessing import Process
+from multiprocessing import Process, Event
 from json import load
 from time import sleep
+from sys import stdin
 
 class FRSBot:
 
@@ -108,11 +109,12 @@ class FRSBot:
 
         if(print): print(self.__page.text)
 
-    def run(self):
+    def run(self, e):
         print("MASTERW6B is Starting FRS BOT for " + self.name + " !")
         print(self.name + " LOGIN !")
         self.__login()
-        print("Login done")
+
+        e.wait()
 
         while(not self.__isAllMatkulSelected()):
             print("Loop Pilih")
